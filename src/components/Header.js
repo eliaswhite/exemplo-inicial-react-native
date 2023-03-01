@@ -5,17 +5,19 @@ export default class header extends Component {
   render() {
     return (
       <View style={styles.header}>
-        <Text style={styles.headerText}>Lista de Tarefas</Text>
+        <Text style={styles.headerText}>{this.props.titulo}</Text>
       </View>
+      
     );
   }
 }
 
 const styles = StyleSheet.create({
   header: {
-    backgroundColor: 'coral',
+    backgroundColor: 'black',
     padding: 20,
     width: '100%',
+    marginTop: '30%', 
     alignContent: 'center',
     alignItems: 'center',
   },
